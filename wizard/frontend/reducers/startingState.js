@@ -1,0 +1,10 @@
+const initialState = '';
+
+const startingState = (state = initialState, action) => {
+  switch (action.type) {
+    default:
+      return state
+  }
+}
+
+export default startingState;
