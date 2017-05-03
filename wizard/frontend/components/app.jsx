@@ -1,9 +1,10 @@
 import React from 'react';
-import withWizard from './withWizard';
+import Wizard from './withWizard';
+import Step from './Step'
 
 const App = () => {
   return(
-    <div>Inside of the app</div>
+    <Wizard />
   )
 }
 
