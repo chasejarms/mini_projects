@@ -1,5 +1,7 @@
 import React from 'react';
 import Step from './Step';
+import Welcome from './Welcome';
+import Finish from './Finish';
 
 const withWizard = (...components) => {
 
@@ -12,7 +14,7 @@ const withWizard = (...components) => {
           maxIndex: components.length - 1
         }
         this.next = this.next.bind(this);
-        this.previous = this.next.bind(this);
+        this.previous = this.previous.bind(this);
       }
 
       next() {
@@ -46,4 +48,4 @@ const withWizard = (...components) => {
   )
 }
 
-export default withWizard(Step, Step, Step);
+export default withWizard(Welcome, Step, Finish);
