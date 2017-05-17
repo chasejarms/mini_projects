@@ -41,7 +41,7 @@ const withWizard = (...components) => {
             next={this.next}
             previous={this.previous}
             first={index === 0}
-            last={index === maxIndex}/>
+            last={index === maxIndex} />
         )
       }
     }
